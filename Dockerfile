@@ -13,3 +13,7 @@ RUN mv work materials
 ADD data /home/jovyan/materials/data
 ADD notebooks /home/jovyan/materials/notebooks
 
+USER root
+RUN fix-permissions $HOME/materials
+USER $NB_UID
+
