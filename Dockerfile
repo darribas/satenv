@@ -1,5 +1,5 @@
 # Pulling from gds_uol pinned to gds_env:6a3d1cc7
-FROM darribas/gds_uol:2acdf7e4
+FROM darribas/gds_uol
 
 # Adding additional libraries
 RUN conda install -c defaults -c conda-forge --quiet --yes \
