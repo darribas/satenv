@@ -5,10 +5,9 @@ FROM darribas/gds_uol
 RUN conda install -c defaults -c conda-forge --quiet --yes \
     'altair' \
     'lxml' \
-    'scikit-image' \
-    'wget'
+    'scikit-image'
 
-RUN pip install landsat578==0.4.95 rasterstats
+RUN pip install landsat578==0.4.95 rasterstats wget
 
 # Adding materials
 RUN mv work materials
